@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .profile-section img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+        }
+        .profile-section video {
+            width: 300px;
+            height: 170px;
+            border: 2px solid #ddd;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .skills table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .skills th, .skills td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .skills th {
+            background-color: #f4f4f4;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .social-links a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Profil Pribadi</h1>
+
+        <!-- Bagian Profil -->
+        <div class="profile-section">
+            <!-- Gambar profil -->
+            <div>
+                <p><strong>Foto Profil</strong></p>
+                <img src="TP.jpg" alt="Foto Profil">
+                <!-- Fungsi utama: Menampilkan gambar profil -->
+                <!-- Mengapa digunakan: Untuk menampilkan foto profil yang representatif -->
+            </div>
+
+            <!-- Video perkenalan -->
+            <div>
+                <p><strong>Video Perkenalan</strong></p>
+                <video controls>
+                    <source src="profile_video.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung video.
+                </video>
+                <!-- Fungsi utama: Menyisipkan video perkenalan -->
+                <!-- Mengapa digunakan: Untuk menampilkan video pengantar yang relevan dengan profil diri -->
+            </div>
+        </div>
+
+        <!-- Tentang Saya -->
+        <h2>Tentang Saya</h2>
+        <p>Halo! Saya adalah seorang pengembang web antusias dengan passion di bidang teknologi dan desain kreatif.</p>
+
+        <!-- Tabel keterampilan -->
+        <h2>Keterampilan</h2>
+        <div class="skills">
+            <table>
+                <tr>
+                    <th>Keterampilan</th>
+                    <th>Tingkat</th>
+                </tr>
+                <tr>
+                    <td>HTML/CSS</td>
+                    <td>Mahir</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Menengah</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Pemula</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Form Hubungi Saya -->
+        <h2>Hubungi Saya</h2>
+        <form action="#" method="post">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Kirim Pesan</button>
+        </form>
+
+        <!-- Link Media Sosial -->
+        <h2>Media Sosial:</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/grace-sihotang-603016266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/grace__sihotang?igsh=emJweHo2ZGRoY3Zq" target="_blank">Instagram</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
